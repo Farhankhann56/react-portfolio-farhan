@@ -20,7 +20,7 @@ const projects = [
     title: 'Real-time Weather Dashboard',
     desc: 'Dynamic weather application with API integration and clean, intuitive design.',
     tech: ['JavaScript', 'API', 'Responsive', 'UI/UX'],
-    link: 'https://github.com/Farhankhann56/weather-dashboard',
+    link: 'https://react-weather-dashboard-xi.vercel.app/',
   },
 ];
 
