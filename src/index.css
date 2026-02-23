@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Light Mode  */
+:root {
+  --bg-primary: theme('colors.gray.50');
+  --bg-secondary: theme('colors.white');
+  --text-primary: theme('colors.gray.900');
+  --text-secondary: theme('colors.gray.700');
+  --accent: theme('colors.indigo.600');
+}
+
+/* Dark Mode  */
+.dark {
+  --bg-primary: theme('colors.gray.950');
+  --bg-secondary: theme('colors.gray.900');
+  --text-primary: theme('colors.gray.100');
+  --text-secondary: theme('colors.gray.300');
+  --accent: theme('colors.indigo.400');
+}
+
+/* Global styles using variables */
+body {
+  @apply font-inter min-h-screen transition-colors duration-300;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  overflow-x: hidden;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.indigo.700');
+}
